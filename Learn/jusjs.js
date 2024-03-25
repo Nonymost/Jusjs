@@ -103,10 +103,10 @@ set.add("sita");
 //----------------Maps-------------------
 const mapin = new Map([
     ["Ram", "Bhaktapur"],
-    ["Shyam","Kathmandu"],
+    ["Shyam", "Kathmandu"],
 ]);
-mapin.set("Ravi","Teja");
-mapin.set("i","Teja");
+mapin.set("Ravi", "Teja");
+mapin.set("i", "Teja");
 // for(let x of mapin){
 //     console.log(x);
 // };
@@ -125,3 +125,59 @@ mapin.set("i","Teja");
 // mapin.forEach(function(value, key){
 //     console.log(`${key} ${value}`);
 // });
+
+// ----------XMLHttpRequest()-----------
+
+// var xhr = new XMLHttpRequest();
+// xhr.onreadystatechange = () => {
+//     console.log(xhr.readyState);
+//     console.log(xhr.status);
+//     console.log(xhr.responseText);
+// };
+
+// xhr.open('get','https://www.google.com/search',true);
+// xhr.send();
+
+//-----------------IIFE----------------
+//Instant Invoked Function Expression
+
+// (function(){   //IIFE
+//     console.log("eeuel");
+// })();
+
+// function test(){   //normal function
+//     console.log("eiiei");
+// }
+// test();
+
+// (function (a, b) {
+//     console.log("Hello " + (a + b));
+//     console.log(arguments[0] + " " + arguments[1]);
+// })(10, 20);
+
+//----------------scoping-------------
+
+// {
+//     var scope = 10;
+//     const a = 20;
+//     let n = 30;
+// }
+
+// console.log(scope);
+// console.log(a);
+// console.log(n);
+
+// -----------Recursion--------------
+
+// let a = 20;
+
+// function diminishToZero(num) {
+//     if (num >= 0){
+//         console.log(num);
+//         num--;
+//         diminishToZero(num);
+//     }
+// }
+
+// diminishToZero(a);
+
