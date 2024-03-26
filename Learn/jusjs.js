@@ -181,3 +181,36 @@ mapin.set("i", "Teja");
 
 // diminishToZero(a);
 
+//--------------this keyword------------------
+// const Person = {
+//     name:"Ram",
+//     class:10,
+//     age:18,
+//     grade:"A+",
+//     info : function(){
+//         return this.name + " " + this.class+ " " + this.age + " ";
+//     }
+// }
+
+// class Data{
+//     constructor(n,c,a,){
+//         this.name = n;
+//         this.class = c;
+//         this.age = a;
+//     }
+//      print(){
+//         return (`${this.name} ${this.class} ${this.age}`);
+//     }
+// }
+// let student = [];
+// student[0] = new Data("ram",12,18);
+// student[1] = new Data("shyam",12,18);
+// student[2]= new Data("sbaita",34,23);
+
+
+
+// for(let s of student){
+//         console.log(s.print());
+// }
+
+
