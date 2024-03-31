@@ -1,1 +1,5 @@
-Hello. My name is Anuj. Now I am 
+{
+    "name": "anuj",
+    "class": "BCA5th",
+    "age": 21,
+}

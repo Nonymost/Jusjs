@@ -1,31 +1,33 @@
-class Data{
-    print(){
-        return `Name: ${this.name} , Age: ${this.age} , Place: ${this.place}`;
+var jsonUser;
+function getRequest() {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function(e) {
+       if (this.readyState === 4 && this.status === 200) {
+         jsonUser = JSON.parse(this.responseText);
+       }
     }
+    xhr.open('GET', "test.json", false);
+    xhr.send();
+ }
+getRequest();
+
+for(let user of jsonUser){
+    // console.log(user.name,":",user.age,":",user.place);
 }
 
-class Faculty{
-    constructor(name,age,place){
-        this.name = name;
-        this.age = age;
-        this.place = place;
-    }
-        
+function Hello(){
+    console.log("Hello");
 }
-// const studentsData = new Map();
-// studentsData.set("Rames",new Data("Ramesh" , 22 , "Nepalgunj"));
-// studentsData.set("Suresh",new Data("Suresh" , 22 , "Nepalgunj"));
-// studentsData.set("Sabin",new Data("Suresh" , 22 , "Nepalgunj"));
-const s = new Data();
-const s1 = new Faculty("Ram",12,"Kathmandu");
-// console.log(s1);
+function Bye(){
+    console.log("bye");
+}
 
-console.log(s.print.call(s1));
+var p = new Promise(function(resolve, reject){
+    // console.log(Check + 20);
+        resolve(Hello());
+        reject(Bye());
+});
 
-// studentsData.forEach((values,keys)=>{
-//     console.log(`${keys}  ${values.place}`);
-// })
-
-// for(let s of studentsData){
-//     console.log(s[1]);
-// }
+p.then(function(value){
+console.log(value);
+});

@@ -1,0 +1,14 @@
+[
+        {
+            "name": "Shyam",
+            "age": 21,
+            "place": "Kathmandu"
+        },
+        {
+            "name":"Ram",
+            "age": 22,
+            "place" : "Biratnagar"
+        }
+        
+    ]
+    
