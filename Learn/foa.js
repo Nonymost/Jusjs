@@ -1,33 +1,13 @@
-var jsonUser;
-function getRequest() {
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function(e) {
-       if (this.readyState === 4 && this.status === 200) {
-         jsonUser = JSON.parse(this.responseText);
-       }
-    }
-    xhr.open('GET', "test.json", false);
-    xhr.send();
- }
-getRequest();
+let string = "Apple123";
 
-for(let user of jsonUser){
-    // console.log(user.name,":",user.age,":",user.place);
+class Test{
+  constructor(name,place){
+    this.name = name;
+    this.place = place;
+  }
 }
-
-function Hello(){
-    console.log("Hello");
+let t = new Test("Ram","Shankara");
+t = new Test("ravi","ktm");
+for(let i in t){
+  console.log(i[2]);
 }
-function Bye(){
-    console.log("bye");
-}
-
-var p = new Promise(function(resolve, reject){
-    // console.log(Check + 20);
-        resolve(Hello());
-        reject(Bye());
-});
-
-p.then(function(value){
-console.log(value);
-});
